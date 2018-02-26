@@ -1,1 +1,1 @@
-worker: node Clone.js
+worker: node CloneVLT.js
