@@ -1,4 +1,5 @@
 require("dotenv").config();
+require("./VLTcorp.js");
 var Discord = require("discord.js");
 var client = new Discord.Client();
 var VLT ;
