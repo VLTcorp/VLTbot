@@ -1,5 +1,4 @@
 require("dotenv").config();
-require("./VLTcorp.js");
 var Discord = require("discord.js");
 var client = new Discord.Client();
 var VLT ;
@@ -105,6 +104,7 @@ client.on("message", msg =>
 	if (msg.author.id=== process.env.DRABOTID )
 	{	Drabot = true;	}
 	
+
 	if(msg.content.includes("Tic-Tac-Toe") && msg.content.includes(msg.guild.me.displayName) && Drabot )
 	{
 		msg.channel.send("/tttplay").then(msg2 => msg2.delete(1));
@@ -125,6 +125,7 @@ client.on("message", msg =>
 		}
 		msg.channel.send(tabttt[Math.floor(Math.random()*tabttt.length)]).catch(console.error);
 	}
+	
 
 	
 
